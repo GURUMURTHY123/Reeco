@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0px;
+  padding:0px;
+  color: black;
+  background-color: white;
+}
+
+.popup-content {
+  /* margin: auto; */
+  background: rgb(255, 255, 255);
+  width: 25%;
+  padding:20px;
+  top:200px;
+}
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+[role='tooltip'].popup-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  /* background: rgba(0, 0, 0, 0.5); */
+  background: rgba(52, 64, 84, 0.70);
+  backdrop-filter: blur(0px);
+  
+}
+[data-popup='tooltip'].popup-overlay {
+  background: transparent;
+}
