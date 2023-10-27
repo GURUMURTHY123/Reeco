@@ -26,7 +26,7 @@ const Products = props =>{
         <p style={{width:'100px', marginLeft:'20px'}}>Status</p>
       </div>
       {productsData.map((eachProduct, index)=>(
-        <ProductDetails eachProduct = {eachProduct} updateStatus={updateStatus} />
+        <ProductDetails eachProduct = {eachProduct} updateStatus={updateStatus} index={index} lastIndex={(productsData.length)-1} />
       ))}
     </div>
   )
