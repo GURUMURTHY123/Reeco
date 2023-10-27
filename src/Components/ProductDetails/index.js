@@ -1,11 +1,18 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {ImCross} from 'react-icons/im'
 import {TiTick} from 'react-icons/ti'
-import {CiWarning} from 'react-icons/ci'
 import Popup from 'reactjs-popup'
 
 const ProductDetails = props => {
+  const [isPopupOpen, setIsOpenPopup] = useState(false)
   const {eachProduct, updateStatus} = props
+
+  const onClickedWrong = e =>{
+    if(eachProduct.status===''){
+      e.target.style.color = 'red'
+      setIsOpenPopup(true)
+    }
+  }
 
   let statusColor;
 
@@ -16,8 +23,10 @@ const ProductDetails = props => {
   }
 
   const onClickedTick = e =>{
-    e.target.style.color='green'
-    updateStatus(eachProduct.id, 'Approved')
+    if(eachProduct.status===''){
+      e.target.style.color='green'
+      updateStatus(eachProduct.id, 'Approved')
+    }
   }
     return (<div key={eachProduct.id} style={{display:'flex'}}>
         <img src='https://res.cloudinary.com/datzkejai/image/upload/v1698334115/Avocado_Hass_osuywp.jpg' alt='product-image' style={{width:'50px', height:'50px', marginLeft:'3px', marginRight:'2px'}} />
@@ -31,7 +40,8 @@ const ProductDetails = props => {
             {(eachProduct.status !== '') && <button style={{borderRadius:'12px', outline:'none', border:'1px solid #265c39', backgroundColor:statusColor, padding:'5px 10px',color:'white', fontSize:'14px', marginRight:'30px', marginLeft:'30px'}}>{eachProduct.status}</button>}
           </div>
           <TiTick size={20} style={{marginRight:'20px'}} onClick={onClickedTick} />
-          <Popup trigger={<ImCross size={10} style={{marginRight:'20px'}}/>} modal nested>
+          <ImCross size={10} style={{marginRight:'20px'}} onClick={onClickedWrong}/>
+          <Popup open={isPopupOpen} modal nested>
               {close =>(
                 <div>
                   <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:'0px'}}>
