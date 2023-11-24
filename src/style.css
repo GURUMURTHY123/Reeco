@@ -7,6 +7,7 @@ body {
   padding:0px;
   color: black;
   background-color: white;
+  overflow-y:hidden;
 }
 
 .popup-content {
@@ -33,3 +34,4 @@ body {
 [data-popup='tooltip'].popup-overlay {
   background: transparent;
 }
+

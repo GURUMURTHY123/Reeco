@@ -1,3 +1,5 @@
+import {v4 as uuid4} from 'uuid'
+
 export const shippingData = [
   {
     label:'Supplier',
@@ -27,7 +29,7 @@ export const shippingData = [
 
 export const sampleProducts = [
   {
-    id: 1,
+    id: uuid4(),
     quantity: 1,
     name: "Chicken Breast Fillets, Boneless matuuma Marinated 6 ounce raw, Invivid",
     price: 10,
@@ -36,7 +38,7 @@ export const sampleProducts = [
     status: "",
   },
   {
-    id: 2,
+    id: uuid4(),
     quantity: 1,
     name: "Chicken Breast Fillets, Boneless matuuma Marinated 6 ounce raw, Invivid",
     price: 20,
@@ -45,7 +47,7 @@ export const sampleProducts = [
     status: "",
   },
   {
-    id: 3,
+    id: uuid4(),
     quantity: 1,
     name: "Chicken Breast Fillets, Boneless matuuma Marinated 6 ounce raw, Invivid",
     price: 30,
@@ -54,7 +56,7 @@ export const sampleProducts = [
     status: "",
   },
   {
-    id: 4,
+    id: uuid4(),
     quantity: 1,
     name: "Chicken Breast Fillets, Boneless matuuma Marinated 6 ounce raw, Invivid",
     price: 40,
@@ -63,7 +65,7 @@ export const sampleProducts = [
     status: "",
   },
   {
-    id: 5,
+    id: uuid4(),
     quantity: 1,
     name: "Chicken Breast Fillets, Boneless matuuma Marinated 6 ounce raw, Invivid",
     price: 50,
@@ -71,4 +73,49 @@ export const sampleProducts = [
     brand: "Hormel Black Labelmany",
     status: "",
   },
+  {
+    id: uuid4(),
+    quantity: 1,
+    name: "Chicken Breast Fillets, Boneless matuuma Marinated 6 ounce raw, Invivid",
+    price: 10,
+    category: "Electronics",
+    brand: "Hormel Black Labelmany",
+    status: "",
+  },
+  {
+    id: uuid4(),
+    quantity: 1,
+    name: "Chicken Breast Fillets, Boneless matuuma Marinated 6 ounce raw, Invivid",
+    price: 20,
+    category: "Clothing",
+    brand: "Hormel Black Labelmany",
+    status: "",
+  },
+  {
+    id: uuid4(),
+    quantity: 1,
+    name: "Chicken Breast Fillets, Boneless matuuma Marinated 6 ounce raw, Invivid",
+    price: 30,
+    category: "Home",
+    brand: "Hormel Black Labelmany",
+    status: "",
+  },
+  {
+    id: uuid4(),
+    quantity: 1,
+    name: "Chicken Breast Fillets, Boneless matuuma Marinated 6 ounce raw, Invivid",
+    price: 40,
+    category: "Electronics",
+    brand: "Hormel Black Labelmany",
+    status: "",
+  },
+  {
+    id: uuid4(),
+    quantity: 1,
+    name: "Chicken Breast Fillets, Boneless matuuma Marinated 6 ounce raw, Invivid",
+    price: 50,
+    category: "Clothing",
+    brand: "Hormel Black Labelmany",
+    status: "",
+  }
 ];
