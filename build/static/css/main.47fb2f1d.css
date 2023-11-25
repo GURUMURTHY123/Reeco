@@ -1,0 +1,2 @@
+*{box-sizing:border-box}body{background-color:#fff;color:#000;margin:0;overflow-y:hidden;padding:0}.popup-content{background:#fff;padding:20px;top:200px;width:25%}.popup-arrow{color:#fff}[role=tooltip].popup-content{box-shadow:0 0 3px rgba(9,98,62,.16);width:200px}.popup-overlay{-webkit-backdrop-filter:blur(0);backdrop-filter:blur(0);background:rgba(52,64,84,.7)}[data-popup=tooltip].popup-overlay{background:transparent}.edit-content{border-radius:10px;height:420px;padding:25px;top:20px;width:600px}
+/*# sourceMappingURL=main.47fb2f1d.css.map*/
