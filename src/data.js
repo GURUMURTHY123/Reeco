@@ -36,6 +36,7 @@ export const sampleProducts = [
     category: "Electronics",
     brand: "Hormel Black Labelmany",
     status: "",
+    previousPrice:10
   },
   {
     id: uuid4(),
@@ -45,6 +46,7 @@ export const sampleProducts = [
     category: "Clothing",
     brand: "Hormel Black Labelmany",
     status: "",
+    previousPrice:20
   },
   {
     id: uuid4(),
@@ -54,6 +56,7 @@ export const sampleProducts = [
     category: "Home",
     brand: "Hormel Black Labelmany",
     status: "",
+    previousPrice:30
   },
   {
     id: uuid4(),
@@ -63,6 +66,7 @@ export const sampleProducts = [
     category: "Electronics",
     brand: "Hormel Black Labelmany",
     status: "",
+    previousPrice:40
   },
   {
     id: uuid4(),
@@ -72,6 +76,7 @@ export const sampleProducts = [
     category: "Clothing",
     brand: "Hormel Black Labelmany",
     status: "",
+    previousPrice:50
   },
   {
     id: uuid4(),
@@ -81,6 +86,7 @@ export const sampleProducts = [
     category: "Electronics",
     brand: "Hormel Black Labelmany",
     status: "",
+    previousPrice:10
   },
   {
     id: uuid4(),
@@ -90,6 +96,7 @@ export const sampleProducts = [
     category: "Clothing",
     brand: "Hormel Black Labelmany",
     status: "",
+    previousPrice:20
   },
   {
     id: uuid4(),
@@ -99,6 +106,7 @@ export const sampleProducts = [
     category: "Home",
     brand: "Hormel Black Labelmany",
     status: "",
+    previousPrice:30
   },
   {
     id: uuid4(),
@@ -108,6 +116,7 @@ export const sampleProducts = [
     category: "Electronics",
     brand: "Hormel Black Labelmany",
     status: "",
+    previousPrice:40
   },
   {
     id: uuid4(),
@@ -117,5 +126,6 @@ export const sampleProducts = [
     category: "Clothing",
     brand: "Hormel Black Labelmany",
     status: "",
+    previousPrice:50
   }
 ];

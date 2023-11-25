@@ -4,7 +4,7 @@ import {FiPrinter} from 'react-icons/fi'
 import ProductDetails from '../ProductDetails'
 
 const Products = props =>{
-  const {productsData, updateStatus} = props
+  const {productsData, updateStatus, updateProducts} = props
   return(
     <div style={{border:'2px solid #e1e8e7', borderRadius:'10px', backgroundColor:'white', padding:'20px 35px'}}>
       <div style={{display:'flex', justifyContent:'space-between', width:'100%', alignItems:'center', marginBottom:'15px'}}>
@@ -26,7 +26,7 @@ const Products = props =>{
         <p style={{width:'100px', marginLeft:'20px'}}>Status</p>
       </div>
       {productsData.map((eachProduct, index)=>(
-        <ProductDetails eachProduct = {eachProduct} updateStatus={updateStatus} index={index} lastIndex={(productsData.length)-1} />
+        <ProductDetails eachProduct = {eachProduct} updateStatus={updateStatus} index={index} lastIndex={(productsData.length)-1} updateProducts={updateProducts} />
       ))}
     </div>
   )
