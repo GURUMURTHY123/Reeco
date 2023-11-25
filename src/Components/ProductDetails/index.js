@@ -46,7 +46,7 @@ const ProductDetails = (props) => {
       updateStatus(eachProduct.id, "price-quantity updated");
     } else if (price !== eachProduct.price) {
       updateStatus(eachProduct.id, "price-updated");
-    } else {
+    } else if(quantity !== eachProduct.quantity){
       updateStatus(eachProduct.id, "quantity-updated");
     }
   };
